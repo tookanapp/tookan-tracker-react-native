@@ -15,8 +15,8 @@ React Native Tookan Tracker lets you add live location tracking to your mobile a
 ## Install
 
 Install the library from npm:<br><br>
-`$ npm install --save react-native-tookan-tracker`<br>
-or<br>
+`$ npm install --save react-native-tookan-tracker`<br><br>
+or<br><br>
 `$ yarn add react-native-tookan-tracker`<br><br>
 
 ## Usage
