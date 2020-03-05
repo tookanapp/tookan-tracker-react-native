@@ -12,6 +12,26 @@ React Native Tookan Tracker lets you add live location tracking to your mobile a
 <b>Note</b> ->: After running `react-native link sp-react-native-mqtt`, Don't forget to add `pod 'MQTTClient'` in ios Pod file and the run `pod install` in ios.<br><br>
 <a href="https://www.npmjs.com/package/@mapbox/polyline">@mapbox/polyline</a> (install only) <br>
 
+## Install
+
+Install the library from npm:<br><br>
+`$ npm install --save react-native-tookan-tracker`<br>
+or<br>
+`$ yarn add react-native-tookan-tracker`<br><br>
+
+## Usage
+
+`import MapTracking from 'react-native-tookan-tracker'`<br>
+ 
+`export default class testTracking extends Component {`<br>
+`  render() {`<br>
+`    return (` <br>
+`       <MapTracking jobId=”1234567” userId= ”123”/>`<br>
+`    );`<br>
+`  }`<br>
+`}`<br>
+
+
 
 ## Props
 
