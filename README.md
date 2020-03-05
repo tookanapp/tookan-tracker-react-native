@@ -1,6 +1,18 @@
 # tookan-tracker-react-native
 Sample project for implementing react-native-tookan-tracker module.
 
+## What is the use of this Package
+React Native Tookan Tracker lets you add live location tracking to your mobile app via Tookan platform. This repo contains an example client app that has everything you need to get started in minutes. This repo written in JavaScript, checkout quickstart if your feel more comfortable with it.
+
+<b>Add and setup these packages to your project before adding react-native-tookan-tracker:</b> <br><br>
+<a href="https://www.npmjs.com/package/react-native-maps">react-native-maps</a> (install + link) <br>
+<br>
+<a href="https://www.npmjs.com/package/axios">axios</a> (install only) <br><br>
+<a href="https://www.npmjs.com/package/sp-react-native-mqtt">sp-react-native-mqtt</a> (install + link) <br>
+<b>Note</b> ->: After running `react-native link sp-react-native-mqtt`, Don't forget to add `pod 'MQTTClient'` in ios Pod file and the run `pod install` in ios.<br><br>
+<a href="https://www.npmjs.com/package/@mapbox/polyline">@mapbox/polyline</a> (install only) <br>
+
+
 ## Props
 
 | Prop | Type | Default | Note |
