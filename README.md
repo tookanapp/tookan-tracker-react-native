@@ -47,6 +47,7 @@ or<br><br>
 | `agentMarkerImage` | `Image source` | <img style="width:30px;height:50px;" src="https://tookan.s3.amazonaws.com/task_images/P5Gi1583400484958-icmarker.png" />  | Image source used for indicating the agent marker on a map.
 | `anchorX` | `Number` | `0.4` | For adjusting the agent marker on x-axis.
 | `anchorY` | `Number` | `0.4` | For adjusting the agent marker on y-axis.
+| `getData` | `function` |  | For getting raw data from sockets.
 
 <br>
 <br>
