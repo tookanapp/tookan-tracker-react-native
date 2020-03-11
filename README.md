@@ -21,7 +21,9 @@ or<br><br>
 
 ## Usage
 
-`import MapTracking from 'react-native-tookan-tracker'`<br>
+With UI
+
+`import {MapTracking} from 'react-native-tookan-tracker'`<br>
  
 `export default class testTracking extends Component {`<br>
 `  render() {`<br>
@@ -31,6 +33,16 @@ or<br><br>
 `  }`<br>
 `}`<br>
 
+Without UI
+
+`import {getSocketData} from 'react-native-tookan-tracker'`<br>
+ 
+`export default class testTracking extends Component {`<br>
+
+`   getSocketData(your_jobId, your_user_id, data => {`<br>
+`       console.log(data);`<br>
+`    });`<br>
+`}`<br>
 
 
 ## Props
@@ -47,7 +59,8 @@ or<br><br>
 | `agentMarkerImage` | `Image source` | <img style="width:30px;height:50px;" src="https://tookan.s3.amazonaws.com/task_images/P5Gi1583400484958-icmarker.png" />  | Image source used for indicating the agent marker on a map.
 | `anchorX` | `Number` | `0.4` | For adjusting the agent marker on x-axis.
 | `anchorY` | `Number` | `0.4` | For adjusting the agent marker on y-axis.
-| `getData` | `function` |  | For getting raw data from sockets.
+| `getData` | `function` |  | For getting raw data from sockets(with UI).
+| `getSocketData`|`function` | | For getting raw data of sockets (without UI)
 
 <br>
 <br>
