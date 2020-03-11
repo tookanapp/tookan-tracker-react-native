@@ -61,6 +61,7 @@ Without UI
 | `anchorY` | `Number` | `0.4` | For adjusting the agent marker on y-axis.
 | `getData` | `function` |  | For getting raw data from sockets(with UI).
 | `getSocketData`|`function` | | For getting raw data of sockets (without UI)
+| `stopTracking`|`function` | | For disconnecting the sockets (without UI)
 
 <br>
 <br>
