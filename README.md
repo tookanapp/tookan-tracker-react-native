@@ -11,6 +11,7 @@ React Native Tookan Tracker lets you add live location tracking to your mobile a
 <a href="https://www.npmjs.com/package/sp-react-native-mqtt">sp-react-native-mqtt</a> (install + link) <br>
 <b>Note</b> ->: After running `react-native link sp-react-native-mqtt`, Don't forget to add `pod 'MQTTClient'` in ios Pod file and the run `pod install` in ios.<br><br>
 <a href="https://www.npmjs.com/package/@mapbox/polyline">@mapbox/polyline</a> (install only) <br>
+<b>Note:</b> If you are using Tracking without UI then this library is not required.
 
 ## Install
 
@@ -45,6 +46,7 @@ Without UI
 `}`<br>
 
 
+
 ## Props
 
 | Prop | Type | Default | Note |
@@ -60,8 +62,42 @@ Without UI
 | `anchorX` | `Number` | `0.4` | For adjusting the agent marker on x-axis.
 | `anchorY` | `Number` | `0.4` | For adjusting the agent marker on y-axis.
 | `getData` | `function` |  | For getting raw data from sockets(with UI).
-| `getSocketData`|`function` | | For getting raw data of sockets (without UI)
-| `stopTracking`|`function` | | For disconnecting the sockets (without UI)
+
+<h1>Methods:</h1>
+
+<b>getSocketData(jobId,userId,callback):</b>
+ 
+This method is used to getting the raw data from sockets for without UI tracking.
+
+`    getSocketData(this.state.jobId, this.state.userId, data => {`<br>
+`      console.log(data);`<br>
+`    });`<br>
+
+<b>getETA (For Without UI):</b><br>
+This method is used to get ETA for job destination by inputing the start location and map key.
+
+`import {getSocketData,getETA} from 'react-native-tookan-tracker'`<br>
+ 
+`export default class testTracking extends Component {`<br>
+
+`   getSocketData(your_jobId, your_user_id, data => {`<br>
+`       console.log(data);`<br>
+`    });`<br>
+
+`    getETA(`<br>
+`      {latitude: '30.6942713', longitude: '76.8792693'},`<br>
+`      'goog_map_key',`<br>
+`      data => {`<br>
+`        console.log(data);`<br>
+`      },`<br>
+`    );`<br>
+`}`<br>
+
+<b>stopTracking():</b>
+
+This method is used to stop the tracking and disconnecting the sockets.
+
+
 
 <br>
 <br>
